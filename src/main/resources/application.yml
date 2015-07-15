@@ -1,9 +1,0 @@
-kafka:
-  bootstrapBrokers:
-    - localhost:9092
-
-  clientId: 'local'
-
-replay:
-  replayService:
-    jobThreadPoolSize: 5

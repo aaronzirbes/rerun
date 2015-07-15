@@ -1,0 +1,21 @@
+{"namespace": "com.peoplenet.rerun.replay.api",
+ "type": "record",
+ "name": "ReplayRequest",
+ "fields": [
+     {"name": "name", "type": "string"},
+     {"name": "topic",  "type": "string"},
+     {"name": "partition", "type": "string"},
+     {"name": "startingOffset", "type": "long"},
+     {"name": "endingOffset", "type": "long"},
+     {"name": "httpTarget", "type": {
+
+        "namespace": "com.peoplenet.rerun.replay.api",
+        "type": "record",
+        "name": "HttpTarget",
+        "fields": [
+            {"name": "url", "type": "string"},
+            {"name": "method", "type": "string"},
+            {"name": "queryParams", "type": "map", "values": "string"}
+        ]
+     }
+ ]}
